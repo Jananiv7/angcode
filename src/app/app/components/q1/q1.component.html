@@ -1,0 +1,25 @@
+<mat-card class="section-card1">
+    <mat-card-title class="textcenter">
+Q1 
+    </mat-card-title>
+    <mat-card-content class="textcenter">
+        <form [formGroup]="Q1form" class="example-form">
+            <mat-form-field class="example-full-width">
+              <input  matInput placeholder="Enter Index" formControlName="indexControl">
+            </mat-form-field>
+          
+          
+          </form>
+          <div class="textcenter">
+        <button mat-raised-button color="accent" (click) ="getResult()">Get Result</button>&nbsp;
+        <button mat-raised-button color="accent" (click) ="Clear()">Clear Input </button>
+        <br><br>
+        Result : {{result}}
+    </div>
+        
+    </mat-card-content>
+    <mat-card-footer> <button mat-raised-button color="accent" routerLink="/app/Q2">Go To 2</button></mat-card-footer>
+</mat-card>
+<div>
+   
+</div>

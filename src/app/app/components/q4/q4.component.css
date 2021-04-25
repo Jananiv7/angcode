@@ -1,0 +1,22 @@
+.c1topleft{
+    top: 0;
+    left: 0;
+}
+.c2topright{
+    top: 0!important;
+    margin-left: 85%;
+    position: absolute;
+}
+.c3bottomleft{
+    bottom: 0 !important;
+    position: absolute;
+}
+.c4bottomright{
+    bottom: 0 !important;
+    position: absolute;
+    margin-left: 90%;
+}
+.center{
+    padding-top:10%;
+    text-align: center;
+}

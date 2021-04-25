@@ -1,0 +1,11 @@
+
+Compo Y
+<form [formGroup]="Yform" class="example-form">
+    <mat-form-field class="example-full-width">
+      <input  matInput placeholder="Enter Index" formControlName="info">
+    </mat-form-field>
+  
+  
+  </form>
+  <div class="textcenter">
+<button mat-raised-button color="accent" (click) ="save()"[disabled]="savestatus">save</button>&nbsp;

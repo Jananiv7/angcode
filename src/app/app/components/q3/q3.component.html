@@ -1,0 +1,25 @@
+<mat-card class="section-card1">
+    <mat-card-title class="textcenter">
+Q3 
+    </mat-card-title>
+    <mat-card-content class="textcenter">
+        <form [formGroup]="Q1form" class="example-form">
+          <div formArrayName="indexControl" *ngFor="let que of
+          Q1form?.get('indexControl')['controls'];let id=
+          index">
+            <mat-form-field class="example-full-width">
+              <input  matInput placeholder="Enter phone number" [formControlName]="id">
+            </mat-form-field>
+          
+          </div>
+          </form>
+          <div class="textcenter">
+        <button mat-raised-button color="accent" (click) ="Submit()">Submit</button>&nbsp;
+        <button mat-raised-button color="accent" (click) ="AddAnotherPhoneNumber()">Add another phone number </button>
+        <br><br>
+       
+    </div>
+        
+    </mat-card-content>
+    <mat-card-footer> <button mat-raised-button color="accent" routerLink="/app/Q4">Go To 4</button></mat-card-footer>
+</mat-card>

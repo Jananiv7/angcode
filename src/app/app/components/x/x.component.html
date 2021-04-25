@@ -1,0 +1,22 @@
+
+<mat-card>
+    <mat-card-title>Note: see the console for soln</mat-card-title>
+<mat-card-content>
+    Comp X Name {{name}}
+    <form [formGroup]="xform" class="example-form" *ngIf="showInput">
+        <mat-form-field class="example-full-width">
+          <input  matInput placeholder="Enter Index" formControlName="info">
+        </mat-form-field>
+      
+      
+      </form>
+     
+<br><button mat-raised-button color="accent" (click) ="Edit()">Edit</button>&nbsp;
+<button mat-raised-button color="accent" [disabled] = "savecheck" (click) ="AddY()"> + </button>
+<br>
+<ng-container *ngFor="let i of count">
+    <br>
+<app-y  (saved) = "savecheckToDisableButton($event)"></app-y>
+</ng-container>
+</mat-card-content>
+</mat-card>
